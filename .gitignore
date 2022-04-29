@@ -2,3 +2,5 @@ generator/build
 generator/node_modules
 generator/*.txt
 generator/*.bak
+*.txt
+wordcount

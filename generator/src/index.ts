@@ -3,12 +3,8 @@ import * as fs from 'fs';
 let res = null
 
 console.time()
-fs.writeFileSync('./lorem.txt', "")
-// generates ~= 5GB 
-let nIters = 2604
-for (let i = 0; i < nIters ; i++) {
-  res = faker.lorem.paragraphs(10000)
-  fs.writeFileSync('./lorem.txt', res , { flag: 'a' })
-}
+// generates ~= 6.5GB 
+res = faker.lorem.paragraphs(2000000)
+fs.writeFileSync('./lorem.txt', res , { flag: 'a' })
 fs.writeFileSync('./lorem.txt', '\n', { flag: 'a' })
 console.timeEnd()

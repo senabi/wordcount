@@ -4,3 +4,8 @@ generator/*.txt
 generator/*.bak
 *.txt
 wordcount
+r
+words.txt
+words.txt.bak
+main
+all.txt
